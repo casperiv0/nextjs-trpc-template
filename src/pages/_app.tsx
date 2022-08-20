@@ -11,7 +11,7 @@ import { SessionProvider } from "next-auth/react";
 import "styles/globals.css";
 import { useUser } from "hooks/use-user";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+function App({ Component, pageProps }: AppProps) {
   const { session } = useUser();
 
   return (
@@ -21,11 +21,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Layout>
     </SessionProvider>
   );
-};
+}
 
 function getBaseUrl() {
-  if (process.env.NODE_ENV === "production") {
-    return process.env.NEXTAUTH_URL || process.env.NEXT_PUBLIC_NEXTAUTH_URL;
+  if (process.env.NEXT_PUBLIC_NEXTAUTH_URL) {
+    return process.env.NEXT_PUBLIC_NEXTAUTH_URL;
   }
 
   return `http://localhost:${process.env.PORT ?? 3000}`;
@@ -62,4 +62,4 @@ export default withTRPC<AppRouter>({
     };
   },
   ssr: true,
-})(MyApp);
+})(App);
