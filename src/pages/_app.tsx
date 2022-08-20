@@ -9,7 +9,7 @@ import type { AppRouter } from "server/routers/_app";
 import { SessionProvider } from "next-auth/react";
 
 import "styles/globals.css";
-import { useUser } from "src/hooks/useUser";
+import { useUser } from "hooks/use-user";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { session } = useUser();

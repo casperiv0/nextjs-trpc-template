@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import * as React from "react";
-import { useUser } from "src/hooks/use-user";
+import { useUser } from "hooks/use-user";
 import { Loader } from "./loader";
 
 interface LayoutProps {

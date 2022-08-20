@@ -1,6 +1,6 @@
 import { PageHeader } from "components/ui/page-header";
 import Head from "next/head";
-import { useUser } from "src/hooks/use-user";
+import { useUser } from "hooks/use-user";
 
 export default function IndexPage() {
   const { user } = useUser();
