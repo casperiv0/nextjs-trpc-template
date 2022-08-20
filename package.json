@@ -12,12 +12,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.9.7",
     "@prisma/client": "^4.2.1",
-    "@radix-ui/react-dialog": "^1.0.0",
-    "@radix-ui/react-dropdown-menu": "^1.0.0",
-    "@radix-ui/react-switch": "^1.0.0",
-    "@react-aria/label": "^3.4.0",
     "@tanstack/react-table": "^8.5.11",
     "@trpc/client": "^9.27.0",
     "@trpc/next": "^9.27.0",
@@ -28,11 +23,9 @@
     "react": "18.2.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.34.2",
     "react-query": "^3.39.2",
     "superjson": "^1.9.1",
-    "tailwind-merge": "^1.5.1",
-    "zod": "^3.18.0"
+    "tailwind-merge": "^1.5.1"
   },
   "devDependencies": {
     "@casper124578/eslint-config": "^4.4.0",

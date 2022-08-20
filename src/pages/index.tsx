@@ -1,6 +1,10 @@
 import { PageHeader } from "components/ui/page-header";
 import Head from "next/head";
 import { useUser } from "hooks/use-user";
+import Link from "next/link";
+import { buttonSizes, buttonVariants } from "components/ui/button";
+import { classnames } from "utils/classnames";
+import { ArrowRight } from "react-bootstrap-icons";
 
 export default function IndexPage() {
   const { user } = useUser();
@@ -19,6 +23,19 @@ export default function IndexPage() {
       <p>
         You are currently logged in as <strong>{user?.email}</strong>
       </p>
+
+      <Link href="/settings">
+        <a
+          className={classnames(
+            "flex items-center gap-2 w-fit mt-5 rounded-sm transition-all border-[1.5px] border-transparent group",
+            buttonVariants.default,
+            buttonSizes.sm,
+          )}
+        >
+          Settings
+          <ArrowRight className="group-hover:translate-x-0.5 transition-transform" />
+        </a>
+      </Link>
     </>
   );
 }
