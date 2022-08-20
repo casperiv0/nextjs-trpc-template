@@ -8,8 +8,7 @@
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,css,json}\" --ignore-path .gitignore",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx,",
-    "test-tsc": "npx prisma generate && tsc --noEmit",
-    "test": "vitest"
+    "test-tsc": "npx prisma generate && tsc --noEmit"
   },
   "dependencies": {
     "@prisma/client": "^4.2.1",
