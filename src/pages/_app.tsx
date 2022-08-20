@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
 function getBaseUrl() {
   if (process.env.NODE_ENV === "production") {
-    return process.env.NEXTAUTH_URL;
+    return process.env.NEXTAUTH_URL || process.env.NEXT_PUBLIC_NEXTAUTH_URL;
   }
 
   return `http://localhost:${process.env.PORT ?? 3000}`;
