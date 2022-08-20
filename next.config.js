@@ -1,7 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/**
+ * @type {import("next").NextConfig}
+ */
+module.exports = {
+  cleanDistDir: true,
   reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+  experimental: {
+    browsersListForSwc: true,
+    legacyBrowsers: false,
+    images: { allowFutureImage: true },
+  },
+};
