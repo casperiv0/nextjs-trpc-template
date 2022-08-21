@@ -1,5 +1,12 @@
 # Next.js/tRPC/Tailwind CSS/Next Auth template
 
+## What's included
+
+- Next.js
+- tRPC
+- Tailwind CSS
+- Next Auth
+
 ## Development
 
 ```bash

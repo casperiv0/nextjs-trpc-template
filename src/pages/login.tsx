@@ -8,7 +8,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="p-10">
+    <>
       <header>
         <h1 className="text-4xl font-serif">Login</h1>
         <p className="mt-3 text-neutral-300">
@@ -22,6 +22,6 @@ export default function LoginPage() {
           Login via GitHub
         </Button>
       </div>
-    </div>
+    </>
   );
 }
