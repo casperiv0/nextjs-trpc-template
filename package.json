@@ -24,7 +24,7 @@
     "react-dom": "18.2.0",
     "react-query": "^3.39.2",
     "superjson": "^1.9.1",
-    "tailwind-merge": "^1.5.1"
+    "tailwind-merge": "^1.6.0"
   },
   "devDependencies": {
     "@casper124578/eslint-config": "^4.4.0",
