@@ -3,7 +3,7 @@
 ## What's included
 
 - Next.js
-- tRPC
+- tRPC (v10)
 - Tailwind CSS
 - Next Auth
 
