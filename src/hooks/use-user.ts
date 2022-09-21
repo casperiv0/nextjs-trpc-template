@@ -1,7 +1,7 @@
 import { trpc } from "utils/trpc";
 
 export function useUser() {
-  const { data, ...query } = trpc.useQuery(["user.getSession"]);
+  const { data, ...query } = trpc.user.getSession.useQuery();
   const user = data?.user;
   const session = data?.session;
 

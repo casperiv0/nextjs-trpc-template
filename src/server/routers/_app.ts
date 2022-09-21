@@ -1,7 +1,8 @@
-import { createRouter } from "../create-router";
-import superjson from "superjson";
+import { t } from "../trpc";
 import { userRouter } from "./user-router";
 
-export const appRouter = createRouter().transformer(superjson).merge("user.", userRouter);
+export const appRouter = t.router({
+  user: userRouter,
+});
 
 export type AppRouter = typeof appRouter;

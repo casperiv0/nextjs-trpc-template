@@ -11,7 +11,7 @@ import { useUser } from "hooks/use-user";
 
 export default function SettingsPage() {
   const { user } = useUser();
-  const deleteUserMutation = trpc.useMutation("user.delete-user");
+  const deleteUserMutation = trpc.user.deleteUser.useMutation();
 
   function handleLogout() {
     signOut({ callbackUrl: "/login" });
