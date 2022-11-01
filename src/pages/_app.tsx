@@ -1,4 +1,3 @@
-import * as React from "react";
 import type { AppProps } from "next/app";
 import { Layout } from "components/ui/layout";
 import { SessionProvider } from "next-auth/react";
