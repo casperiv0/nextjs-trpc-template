@@ -11,8 +11,4 @@ module.exports = {
   images: {
     domains: ["avatars.githubusercontent.com"],
   },
-  experimental: {
-    browsersListForSwc: true,
-    legacyBrowsers: false,
-  },
 };
