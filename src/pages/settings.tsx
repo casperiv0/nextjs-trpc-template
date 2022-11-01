@@ -1,11 +1,10 @@
-import * as React from "react";
 import { Button } from "components/ui/button";
 import { FormField } from "components/form/form-field";
 import { Input } from "components/form/input";
 import { trpc } from "utils/trpc";
 
 import { signOut } from "next-auth/react";
-import Image from "next/future/image";
+import Image from "next/image";
 import { PageHeader } from "components/ui/page-header";
 import { useUser } from "hooks/use-user";
 
